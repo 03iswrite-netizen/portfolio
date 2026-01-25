@@ -14,11 +14,11 @@
 
     <nav>
       <ul>
-        <li>about</li>
-        <li>Skill</li>
-        <li>about</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li><a href="#About">about</a></li>
+        <li><a href="#Skill">Skill</a></li>
+        <li><img src="chatgpt_icon.png .png" alt="about" width="48 height=48"></li>
+        <li><a href="#Work">Work</a></li>
+        <li><a href="#Contacts">Contact</a></li>
       </ul>
     </nav>
 
@@ -31,17 +31,55 @@
       真摯に学びながら成長していきます！</p>
   </header>
 
-  <section class="works">
-    <h3>Works</h3>
+  <section id="Work">
 
-    <div>
-      <section class="work"></section>
-      <section class="work"></section>
-      <section class="work"></section>
+    <h3>Works</h3>
+    <div class="workspic">
+     <img src="bike4PC1.png" alt="bike">
+     <img src="bike2SP1.png" alt="bike">
+    </div>
+
+    <div class="worksoverview">
+  <div class="overview-row">
+    <h4>制作概要</h4>
+  </div>
+
+  <div class="overview-row">
+    <h4>制作期間</h4>
+    <p>: 5日</p>
+  </div>
+
+  <div class="overview-row">
+    <h4>制作範囲</h4>
+    <p>: HTML / CSS コーディング</p>
+  </div>
+
+  <div class="overview-row">
+    <h4>対応デバイス</h4>
+    <p>: PC / スマートフォン</p>
+  </div>
+
+  <div class="overview-column">
+    <h4>使用技術</h4>
+    <ul>
+      <li>HTML（セマンティックなマークアップ）</li>
+      <li>CSS（Flexbox / レスポンシブ対応）</li>
+    </ul>
+  </div>
+
+  <div class="overview-column">
+    <h4>制作について</h4>
+    <p>
+      デザインを元に、余白や文字の可読性を意識しながら<br>
+      Webサイトとして実用的な構成になるようコーディングしました。<br>
+      副業案件を想定し、修正対応しやすいコードを心がけています。
+    </p>
+  </div>
+</div>
     </div>
   </section>
 
-  <section class="Skills">
+  <section id="Skill">
     <h3>Skill</h3>
 
     <ul>
@@ -69,22 +107,23 @@
   </section>
 
 
-  <section class="About">
-    <nav>
-       <div class="pic">
+  <section id="About">
+    <h3 class="about-about">About</h3>
+      <div class="pic">
         <img src="IMG_6086.JPG" alt="football">
       </div>
 
+     <div class="about-inner">
+      <h3 class="about-title">About</h3>
       <div class="self">
-        <h3 class="about-title">About</h3>
-        
         <p>初めまして
           和歌山県出身の22歳の駆け出しの
           webプログラマーです。
-          見やすいサイトを目標に
+          <strong class="color">見やすいサイト</strong>を目標に
           研鑽していきます！！！</p>
       </div>
-    </nav>
+     </div>
+      
   </section>
 
   <section class="my">
@@ -122,9 +161,10 @@
 
   </section>
 
-  <section class="contacts">
+  <section id="Contacts">
 
-    <div class="contact">
+    <nav class="allcontact">
+     <div class="contact">
       <h3>Contact</h3>
       <ul>
         <li>
@@ -132,7 +172,7 @@
         </li>
 
         <li>
-          <button><a href="mailto:03iswrite@gmail.com" target="_blank">G Mailはこちら</a></button>
+          <a href="mailto:03iswrite@gmail.com" target="_blank">G Mailはこちら</a>
         </li>
       </ul>
     </div>
@@ -140,6 +180,8 @@
     <div class="dog">
       <img src="Pasted Graphic.png">
     </div>
+    </nav>
+    
   </section>
 
   <footer>
