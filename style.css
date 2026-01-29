@@ -3,16 +3,14 @@
 /* common */
 
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #FFC0A6; */
 }
 
 
 body {
-  /* background-color: #FFC0A6; */
-    background-color: #FFF0E5;
+  background-color: #FFF0E5;
 }
 
 h1 {
@@ -20,23 +18,31 @@ h1 {
   margin-top: 128px;
 }
 
-h2,h3{
+h2,
+h3 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* header */
 header {
-  /* background-color: pink; */
-  background-image: url(/Users/itouhiiraginari/ポートフォリオ/image.png);
+  /* background-image: url(/Users/itouhiiraginari/ポートフォリオ/image.png); */
+  background-image: url(Mask\ group\ \(2\).png);
   background-position: center 30%;
   background-size: cover;
   color: #fff;
-
+  min-height: 70vh;
+  padding: 0 0 160px;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 32px;
   gap: 80px;
   font-size: 12px;
@@ -59,148 +65,237 @@ p.header {
   padding-bottom: 128px;
 }
 
-/* works */
-.works {
+/* work */
+#Work {
   padding-top: 64px;
-
 }
 
-.works h3 {
+#Work h3 {
   margin-top: 64px;
 }
 
-.works div {
+#Work .workspic {
   display: flex;
   justify-content: center;
-  margin-top: 64px;
-  padding-bottom: 64px;
+  align-items: center;
+  gap: 16px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 0;
 }
+
+.workspic img {
+  height: auto;
+  max-width: 90%;
+  min-width: 0;
+}
+
+.worksoverview {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+#Work .worksoverview div {
+  margin-top: 32px;
+}
+
+.worksoverview ul {
+  padding-left: 1.2em;
+}
+
+.overview-row {
+  display: flex;
+  gap: 8px;
+}
+
+.overview-column {
+  gap: 8px;
+}
+
+.overview-column ul {
+  margin-top: 8px;
+  ;
+}
+
+.overview-column p {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .worksoverview {
+    padding: 32px 32px;
+  }
+
+  .worksoverview p {
+    font-size: 14px;
+  }
+
+  .worksoverview li {
+    font-size: 14px;
+  }
+
+  #Work .workspic {
+    gap: 4px;
+  }
+
+
+  .workspic img {
+    padding: 0 20px;
+  }
+}
+
 
 /* /* skill */
 
-.Skills {
+#Skill {
   margin: 0 auto;
-  /* background-color: chartreuse; */
 }
 
-.Skills h3 {
+#Skill h3 {
   padding-top: 64px;
 }
 
-.Skills ul {
+#Skill ul {
   display: flex;
-  flex-direction: column;
-  /* 縦並び */
   padding: 0 32px 0;
-  margin: 64px auto 0;
   list-style: none;
   gap: 32px;
   align-items: center;
+  justify-content: center;
 }
 
-.Skills li {
+#Skill li {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 64px;
-  background-image: linear-gradient(to bottom right ,#FFC0A6 , #F2D8AA) ;
+  background-image: linear-gradient(to bottom right, #FFC0A6, #F2D8AA);
   border-radius: 30px;
   padding: 16px 3%;
-  width: clamp(240px,80%, 340px);
+  width: clamp(240px, 80%, 340px);
 }
 
-.Skills li img {
-  width:clamp(200px,100%,300px);
+#Skill li img {
+  width: clamp(200px, 100%, 300px);
   height: auto;
   border-radius: 15%;
   display: block;
 }
 
-.Skills li p {
+#Skill li p {
   max-width: 240px;
   margin-top: 32px;
   padding-bottom: 48px;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .Skills ul {
-    flex-direction: row;
-    /* 横並び */
+@media screen and (max-width: 768px) {
+  #Skill ul {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 64px;
   }
 
-  .Skills li {
+  #Skill li {
     min-width: 250px;
   }
 }
 
 /* About */
 
-.About {
-  /* background-color: fuchsia; */
+#About {
   margin: 0;
-}
-
-.About nav {
   display: flex;
-  margin: 0 auto;
-  padding-top: 128px;
-  align-items: center;
-  /* 縦方向中央 */
   justify-content: center;
-  gap: 24px;
-  max-width: 1000px;
-  gap: 32px;
+  align-items: stretch;
+  /* gap: 32px; */
+  padding-top: 128px;
 }
 
-.About nav .pic {
-  /* padding: 50px 30px; */
+.about-about {
+  opacity: 0;
 }
 
-.About nav img {
-  width: 30vw;
-  max-width: 600px;
-  min-width: 500px;
-  height: auto;
-  display: block;
+#About .about-inner {
+  padding: 64px;
+  gap: 16px;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5%;
 }
 
-.About nav .self {
+#About .about-inner .self {
   display: flex;
   flex-direction: column;
-  /* 縦並び */
   max-width: 200px;
 }
 
-.About nav .self h3 {
+#About .about-inner h3 {
   text-align: center;
 }
 
-.About nav .self p {
+#About .about-inner .self p {
   margin-top: 32px;
-  padding-bottom: 128px;
 }
 
+#About .about-inner .self p .color {
+  color: red;
+}
+
+#About .pic img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+
 @media (max-width: 768px) {
-  .About nav {
+  #About {
     flex-direction: column;
     text-align: center;
+
   }
 
-  .title {
-    order: 1;
+  .about-about {
+    opacity: 1;
   }
 
-  .About .pic {
+  #About .about-inner {
+    padding: 64px;
+    gap: 0px;
+    background: none;
+    border: none;
+    margin: 0 auto;
+  }
+
+  #About .about-inner h3 {
+    opacity: 0;
+  }
+
+  #About .pic img {
+    padding: 32px 32px;
+    width: 100%;
     order: 2;
+    margin: 32px auto;
+      background-image: linear-gradient(to bottom right, #FFC0A6, #F2D8AA);
   }
 
-  .About .self {
+  #About .about-inner .self {
     order: 3;
   }
+
+  #About .about-inner .self p {
+    text-align: center;
   }
+}
 
 /* my */
 
@@ -210,7 +305,7 @@ p.header {
 }
 
 .my .myall {
-  background-image: linear-gradient(to bottom right ,#FFC0A6 , #F2D8AA) ;
+  background-image: linear-gradient(to bottom right, #FFC0A6, #F2D8AA);
   border-radius: 5%;
   border: 1px solid #000;
   max-width: 750px;
@@ -275,47 +370,95 @@ p.header {
 @media (max-width: 768px) {
 
   .my {
-   padding: 32px 16px;
+    padding: 32px 16px;
   }
 
   .my .myall {
-  max-width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border-radius: 0%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 0%;
   }
 }
 
 /* contact */
 
-.contacts {
+#Contacts {
   display: flex;
   justify-content: center;
   margin: 0 64px;
+  padding: 128px 0;
 }
 
-.contacts .contact {
+#Contacts .allcontact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  max-width: 750px;
+  width: 100%;
+  padding: 48px 80px;
+  border-radius: 24px;
+  margin: 0 auto;
+}
+
+#Contacts .contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 24px;
 }
 
-.contacts .contact h3 {
+#Contacts .contact h3 {
   text-align: center;
 }
 
-.contacts .contact li {
+#Contacts .contact ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+#Contacts .contact li {
   list-style: none;
 }
 
-.contacts .contact li p {
+#Contacts .contact li p {
   font-size: 12px;
 }
 
-.contacts .dog img {
-  margin: 0;
+#Contacts .contact a {
+  display: block;
+  background-color: #e0e0e0;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+#Contacts .contact a:hover {
+  transform: scale(1.05);
+}
+
+#Contacts .dog img {
   width: 300px;
   height: auto
+}
+
+@media (max-width: 768px) {
+  #Contacts .allcontact {
+    display: block;
+  }
+
+  #Contacts .allcontact .dog {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* footer */
@@ -329,3 +472,5 @@ footer {
 footer small {
   margin-top: 32px;
 }
+
+@media (max-width: 768px) {}
